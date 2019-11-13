@@ -7,3 +7,5 @@
 @Date: 2019-11-13 13:53:24
 '''
 import tensorflow as tf
+import torch
+print(torch.cuda.is_available())
