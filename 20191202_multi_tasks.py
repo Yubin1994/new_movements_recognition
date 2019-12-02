@@ -1,3 +1,11 @@
+'''
+@Descripttion: 
+@Path: ~/anaconda3/envs/tensorflow/bin/python
+@Coding: _*_UTF-8 _*_
+@Version: python3.6.9  tensorflow-gpu1.14
+@Author: yubin
+@Date: 2019-12-02 19:51:49
+'''
 import tensorflow as tf
 from tensorflow.contrib.layers import batch_norm,flatten
 from tensorflow.contrib.framework import arg_scope
@@ -93,7 +101,6 @@ for test_repitition_id in range(repitition_num):
         def Max_pooling(inputs,pool_size,stride,padding='VALID'):
             network = tf.layers.max_pooling2d(inputs=inputs,pool_size=pool_size,strides=stride,padding=padding)
             return network
-
 
 
         init_learning_rate = 1e-2
